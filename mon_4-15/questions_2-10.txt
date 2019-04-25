@@ -1,0 +1,48 @@
+2. 	cd images/clipart/food
+3. 	cd ../../../e-texts/Poe,EdgarAllan
+4. 	ls
+5. 	cd ../../images
+		pwd
+6. 	mkdir photographs
+7. 	cd photographs
+		touch sunrise.jpg
+8.  mv sunrise.jpg ..
+9.  cd ../../Monkeys/like
+		subl .
+10. rm bananas.html
+
+1.  mkdir directories
+		cd directories 
+		mkdir Dogs e-texts images Monkeys
+		touch forbidden.txt index.html structure.txt
+		cd Dogs
+		mkdir hate like
+		cd hate
+		touch bananas.html bones.html
+		cd ../like
+		touch bananas.html bones.html
+		cd ../../e-texts
+		mkdir Maugham,W.Somerset OReilly,Augustine Poe,EdgarAllan
+		touch gutindex.all
+		cd Maugham,W.Somerset
+		touch moona10.txt moona10.zip
+		cd ../OReilly,Augustine
+		touch AlviraTheHeroineofVesuvius.txt
+		cd ../Poe,EdgarAllan
+		touch poe1v10.txt poe1v10.zip story2.txt
+		cd ../../images
+		mkdir cartoons clipart
+		cd cartoons
+		touch df950523.jpg df971202.jpg
+		cd ../clipart
+		mkdir animals food
+		cd animals
+		touch dog.gif monkey.gif
+		cd ../food
+		touch bananas.gif bone.gif
+		cd ../../../Monkeys
+		mkdir hate like
+		cd hate
+		touch bananas.html bones.html
+		cd ../like
+		touch bananas.html bones.html
