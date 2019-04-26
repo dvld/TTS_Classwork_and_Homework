@@ -92,6 +92,7 @@ rock.addEventListener("click", rockUser);
 paper.addEventListener("click", paperUser);
 scissors.addEventListener("click", scissorsUser);
 
+// computer objects
 
 
 function rockUser() {

@@ -26,6 +26,22 @@ let player_two_obj = {
   }
 }
 
+function convert_to_string(player_choice) {
+  switch (player_choice) {
+    case 0:
+      player_choice = 'rock';
+      break;
+    case 1:
+      player_choice = 'paper';
+      break;
+    case 2:
+      player_choice = 'scissors';
+      break;
+  }
+  console.log(player_choice);
+  return player_choice;
+}
+
 let determine_winner = (player_one, player_two) => {
   player_one = random_Number();
   player_two = random_Number();
@@ -43,29 +59,8 @@ let determine_winner = (player_one, player_two) => {
     // scissors > paper
     (player_one === 2 && player_two === 1)
   ) {
-    switch (player_one) {
-      case 0:
-        player_one = 'rock';
-        break;
-      case 1:
-        player_one = 'paper';
-        break;
-      case 2:
-        player_one = 'scissors';
-        break;
-    }
-
-    switch (player_two) {
-      case 0:
-        player_two = 'rock';
-        break;
-      case 1:
-        player_two = 'paper';
-        break;
-      case 2:
-        player_two = 'scissors';
-        break;
-    }
+    convert_to_string(player_one);
+    convert_to_string(player_two);
     console.log(`${player_one_obj.name} chose ${player_one}`);
     console.log(`${player_two_obj.name} chose ${player_two}`);
     console.log(`${player_one_obj.name} Wins`);
@@ -73,6 +68,8 @@ let determine_winner = (player_one, player_two) => {
     player_one_obj.score.wins++;
     player_two_obj.score.losses++;
   } else {
+    convert_to_string(player_one);
+    convert_to_string(player_two);
     console.log(`${player_one_obj.name} chose ${player_one}`);
     console.log(`${player_two_obj.name} chose ${player_two}`);
     console.log(`${player_two_obj.name} Wins`);
@@ -96,7 +93,7 @@ let play_game_best_out_of = (player_1, player_2, number_of_wins) => {
   console.log(player_two_obj.score);
 }
 
-play_game_best_out_of(player_one_obj, player_two_obj, 20);
+play_game_best_out_of(player_one_obj, player_two_obj, 1);
 // rock = 0
 // paper = 1
 // scissors = 2
