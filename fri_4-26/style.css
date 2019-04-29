@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(19, 19, 19);
+}
+
+.header {
+  /* border: 1px dashed black; */
+  grid-area: header;
+  /* background-color: rgb(29, 29, 29); */
+  color: rgb(216, 216, 216);
+  width: 100%;
+  display: grid;
+}
+
+h1 {
+  font-size: 32px;
+  align-self: center;
+  justify-self: center;
+}
+
+.button_area {
+  /* border: 1px dashed black; */
+  grid-area: button_area;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  /* flex-direction: column; */
+}
+
+#post_area {
+  /* border: 1px dashed black; */
+  grid-area: post_area;
+  /* display: grid; */
+  overflow: auto;
+  /* background-color: rgb(39, 39, 39); */
+}
+
+button {
+  background-color: rgb(28, 140, 245);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(226, 226, 226);
+  width: 90%;
+  justify-self: center;
+  align-content: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 2px solid rgb(204, 204, 204);
+  /* border: none; */
+  box-shadow: -5px 5px 7px lightslategray;
+  outline: none;
+}
+
+button:active {
+  margin: 10px;
+  width: 85%;
+  font-size: 14px;
+  /* height: 75%; */
+}
+
+.post_title, .comment_title {
+  font-size: 20px;
+  margin: 12px 0;
+  padding: 5px 0 5px 5px;
+  color: rgb(40, 90, 197);
+}
+
+.post_body, .comment_body {
+  padding-left: 10px;
+  color: rgb(201, 201, 201);
+}
+
+.comment_author {
+  color: rgb(40, 90, 197);
+  margin: 5px;
+  text-decoration: underline;
+}
+
+
+.container {
+  /* border: 1px dashed black; */
+  margin: 1%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 10vh 85vh;
+  grid-template-areas:
+    "header header"
+    "button_area post_area";
+}
