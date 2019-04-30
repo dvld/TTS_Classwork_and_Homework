@@ -8,6 +8,7 @@ let random_Number = () => {
 // console.log(computer_2);
 let winner;
 
+
 let player_one_obj = {
   name: 'Niko',
   score: {

@@ -75,6 +75,13 @@ button:active {
   text-decoration: underline;
 }
 
+.response_code {
+  color: #fff;
+}
+
+.post_id {
+  color: #fff;
+}
 
 .container {
   /* border: 1px dashed black; */

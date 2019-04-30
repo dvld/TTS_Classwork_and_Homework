@@ -1,0 +1,19 @@
+{
+  "name": "learn_jest",
+  "version": "1.0.0",
+  "description": "learning jest testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "keywords": [
+    "Jest",
+    "JavaScript",
+    "Testing"
+  ],
+  "author": "Niko Roberts",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.7.1"
+  }
+}

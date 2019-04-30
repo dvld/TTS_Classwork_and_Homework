@@ -94,6 +94,7 @@ scissors.addEventListener("click", scissorsUser);
 
 // computer objects
 
+// while ()
 
 function rockUser() {
 
@@ -104,7 +105,7 @@ function rockUser() {
   if (computerChoice === 0) {
     console.log("Computer chose Rock. Tie game");
     alert("Computer chose Rock. Tie game");
-  } else if (rock && computerChoice === 1) {
+  } else if (computerChoice === 1) {
     console.log('Computer chose Paper. You lose');
     alert('Computer chose Paper. You lose');
   } else {
