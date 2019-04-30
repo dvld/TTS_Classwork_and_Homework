@@ -9,5 +9,5 @@ test('subtracts 10 - 4 to equal 6', () => {
 });
 
 test('concatenates 2 strings together', () => {
-  expect(calc.concatenate  ('niko', 'jared')).toBeTruthy();
+  expect(calc.concatenate('niko', 'jared')).toBeTruthy();
 });
